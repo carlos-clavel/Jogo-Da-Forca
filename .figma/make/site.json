@@ -1,0 +1,10 @@
+{
+  "description": "Interactive Hangman game in Brazilian Portuguese with a modern, responsive design that challenges users to guess words before running out of attempts.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

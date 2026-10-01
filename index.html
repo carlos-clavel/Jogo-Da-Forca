@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jogo da Forca interativo em português." />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- figma:body-start -->
+    <div id="app">
+      <main class="welcome">
+        <nav class="welcome__nav" aria-label="Navegação principal">
+          <div class="brand brand--compact">
+            <span class="brand__mark" aria-hidden="true">
+              <span></span><span></span>
+            </span>
+            <span>Jogo da Forca</span>
+          </div>
+          <span class="welcome__tag">Clássico brasileiro</span>
+        </nav>
+
+        <section class="welcome__content">
+          <div class="welcome__copy">
+            <span class="eyebrow">
+              <span class="eyebrow__dot"></span>
+              Teste seu vocabulário
+            </span>
+            <h1>Jogo da <em>Forca</em></h1>
+            <p class="welcome__subtitle">
+              Descubra a palavra antes que seus erros acabem.
+            </p>
+            <button
+              class="button button--primary welcome__button"
+              data-action="start"
+              type="button"
+            >
+              Nova partida <span aria-hidden="true">→</span>
+            </button>
+            <p class="welcome__hint">
+              Escolha uma letra por vez e tente descobrir a palavra secreta.
+            </p>
+          </div>
+
+          <div class="welcome__visual" aria-hidden="true">
+            <span class="visual__label">6 tentativas</span>
+            <div class="visual__sun"></div>
+            <svg class="hangman" viewBox="0 0 300 280">
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <g class="hangman__part is-visible">
+                  <path d="M38 248H172"></path>
+                  <path d="M70 248V35"></path>
+                </g>
+                <g class="hangman__part is-visible">
+                  <path d="M70 36H213"></path>
+                  <path d="M70 78L112 36"></path>
+                  <path d="M213 36V70"></path>
+                </g>
+                <circle
+                  class="hangman__part is-visible"
+                  cx="213"
+                  cy="94"
+                  r="24"
+                ></circle>
+                <path
+                  class="hangman__part is-visible"
+                  d="M213 118V181"
+                ></path>
+                <g class="hangman__part is-visible">
+                  <path d="M213 136L177 164"></path>
+                  <path d="M213 136L249 164"></path>
+                </g>
+                <g class="hangman__part is-visible">
+                  <path d="M213 181L181 226"></path>
+                  <path d="M213 181L245 226"></path>
+                </g>
+              </g>
+            </svg>
+            <div class="visual__word">
+              <span>F</span><span>O</span><span>R</span><span>C</span
+              ><span>A</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="main.js" defer></script>
+    <!-- figma:body-end -->
+  </body>
+</html>
